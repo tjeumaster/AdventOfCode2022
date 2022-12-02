@@ -19,7 +19,7 @@ namespace Day2_RockPaperScissors
             else if (strategyGuide == "Z")
                 return 6 + Choices.ChoiceScore(Choices.WinChoices[opponentChoice]); 
 
-            else throw new Exception("No valid input");
+            else throw new Exception("Invalid input");
         }
 
     }

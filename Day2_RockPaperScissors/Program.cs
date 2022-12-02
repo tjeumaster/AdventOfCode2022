@@ -15,8 +15,10 @@ internal class Program
             var opponentChoice = roundInputs[0];
             var yourChoice = roundInputs[1];
             var round = new Round(opponentChoice, yourChoice);
+
             round.SetStrategy(new GuessedStrategy());
             score1 += round.GetScore();
+
             round.SetStrategy(new RealStrategy());
             score2 += round.GetScore();
 
@@ -24,6 +26,5 @@ internal class Program
 
         Console.WriteLine("Score 1: " + score1);
         Console.WriteLine("Score 2: " + score2);
-
     }
 }

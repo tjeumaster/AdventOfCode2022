@@ -7,6 +7,7 @@ internal class Program
     {
         string filePath = "C:\\Users\\dujardm\\Desktop\\Advent Of Code 2022\\Day1_CalorieCounting\\input.txt";
         string[] lines = File.ReadAllLines(filePath);
+
         int sumCalories = 0;
         int maxCalories = 0;
         List<int> topThreeCalories = new List<int>();
@@ -27,8 +28,6 @@ internal class Program
 
                 sumCalories = 0;
             }
-
-
         }
 
         Console.WriteLine("Max calories: " + maxCalories);

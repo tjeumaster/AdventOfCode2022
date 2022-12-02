@@ -8,6 +8,6 @@ namespace Day2_RockPaperScissors
 {
     public interface IStrategy
     {
-        public int CalculateScore(string choice1, string choice2);
+        public int CalculateScore(string opponentChoice, string yourChoice);
     }
 }

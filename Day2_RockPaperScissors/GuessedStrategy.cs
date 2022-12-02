@@ -20,15 +20,12 @@ namespace Day2_RockPaperScissors
             else if (Choices.LoseChoices[opponentChoice] == yourChoice)
                 return 0;
             else
-                throw new Exception("Choice not valid");
-            
-
+                throw new Exception("Invalid choice");
         }
            
         public int CalculateScore(string opponentChoice, string yourChoice)
         {
             return PlayScore(opponentChoice, yourChoice) + Choices.ChoiceScore(yourChoice);
-
         }
     }
 }
